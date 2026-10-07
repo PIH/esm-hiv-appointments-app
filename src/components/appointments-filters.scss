@@ -1,0 +1,33 @@
+@use '@carbon/layout';
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: layout.$spacing-05;
+  margin-bottom: layout.$spacing-06;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: layout.$spacing-05;
+}
+
+.site {
+  min-width: 18rem;
+}
+
+.period {
+  min-width: 12rem;
+}
+
+.category {
+  width: auto;
+  min-width: 24rem;
+}
+
+.search {
+  flex: 1;
+  min-width: 16rem;
+}

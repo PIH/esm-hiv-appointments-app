@@ -1,0 +1,42 @@
+{
+  "@openmrs/esm-api": {
+    "redirectAuthFailure": {
+      "url": "${openmrsBase}/authenticationui/login/login.page"
+    }
+  },
+  "@openmrs/esm-styleguide": {
+    "Brand color #1": "#FB9500",
+    "Brand color #2": "#FB9500",
+    "Brand color #3": "#D87100"
+  },
+  "@openmrs/esm-primary-navigation-app": {
+    "extensionSlots": {
+      "app-menu-slot": {
+        "remove": [
+          "dispensing-link",
+          "forms-app-link",
+          "offline-tools-link",
+          "system-administration-app-menu-link"
+        ]
+      },
+      "top-nav-actions-slot": {
+        "remove": [
+          "add-patient-action",
+          "implementer-tools-button",
+          "patient-search-icon"
+        ]
+      },
+      "user-panel-slot": {
+        "remove": [
+          "offline-tools-opt-in-offline-mode-button"
+        ]
+      }
+    },
+    "logo": {
+      "src": "${openmrsBase}/ms/uiframework/resource/file/configuration/pih/logo/logo.png",
+      "alt": "Partners In Health",
+      "name": "Partners In Health",
+      "link": "${openmrsBase}/index.htm"
+    }
+  }
+}

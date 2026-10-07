@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.openmrs.org/routes.schema.json",
+  "backendDependencies": {
+    "hivappointments": ">=1.0.0",
+    "webservices.rest": ">=2.2.0"
+  },
+  "extensions": [
+    {
+      "name": "hiv-appointments-app-menu-link",
+      "component": "hivAppointmentsAppMenuLink",
+      "slot": "app-menu-slot",
+      "privileges": ["View HIV Appointments"]
+    }
+  ],
+  "pages": [
+    {
+      "component": "root",
+      "route": "hiv-appointments"
+    }
+  ]
+}

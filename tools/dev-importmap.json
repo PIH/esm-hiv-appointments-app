@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "@openmrs/esm-primary-navigation-app": "https://cdn.jsdelivr.net/npm/@openmrs/esm-primary-navigation-app@next/dist/openmrs-esm-primary-navigation-app.js",
+    "@openmrs/esm-implementer-tools-app": "https://cdn.jsdelivr.net/npm/@openmrs/esm-implementer-tools-app@next/dist/openmrs-esm-implementer-tools-app.js"
+  }
+}

@@ -1,0 +1,71 @@
+@use '@carbon/colors';
+@use '@carbon/layout';
+@use '@carbon/type';
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  gap: layout.$spacing-03;
+  margin-bottom: layout.$spacing-05;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: layout.$spacing-02;
+  padding: layout.$spacing-04;
+  background-color: colors.$white;
+  border: 1px solid colors.$gray-20;
+  border-left-width: layout.$spacing-02;
+  cursor: pointer;
+  text-align: left;
+
+  &:hover {
+    background-color: colors.$gray-10;
+  }
+
+  &:focus-visible {
+    outline: 2px solid colors.$blue-60;
+    outline-offset: -2px;
+  }
+}
+
+.selected {
+  background-color: colors.$gray-10;
+  box-shadow: inset 0 0 0 2px colors.$gray-100;
+}
+
+.label {
+  @include type.type-style('label-01');
+  color: colors.$gray-70;
+}
+
+.count {
+  @include type.type-style('heading-05');
+  color: colors.$gray-100;
+}
+
+.UPCOMING {
+  border-left-color: colors.$blue-60;
+}
+
+.HONORED {
+  border-left-color: colors.$green-60;
+}
+
+.HONORED_LATE {
+  border-left-color: colors.$teal-60;
+}
+
+.RESCHEDULED {
+  border-left-color: colors.$purple-60;
+}
+
+.MISSED {
+  border-left-color: colors.$magenta-60;
+}
+
+.LTFU {
+  border-left-color: colors.$red-60;
+}

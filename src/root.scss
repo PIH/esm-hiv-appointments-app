@@ -1,0 +1,24 @@
+@use '@carbon/colors';
+@use '@carbon/layout';
+@use '@carbon/type';
+
+.page {
+  background-color: colors.$gray-10;
+  min-height: 100%;
+}
+
+.container {
+  padding: layout.$spacing-06 layout.$spacing-07;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: layout.$spacing-03;
+}
+
+.resultCount {
+  @include type.type-style('body-compact-01');
+  color: colors.$gray-70;
+}

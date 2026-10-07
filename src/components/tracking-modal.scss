@@ -1,0 +1,37 @@
+@use '@carbon/colors';
+@use '@carbon/layout';
+@use '@carbon/type';
+
+.summary {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: layout.$spacing-02 layout.$spacing-05;
+  margin-bottom: layout.$spacing-06;
+
+  dt {
+    @include type.type-style('label-01');
+    color: colors.$gray-70;
+  }
+
+  dd {
+    @include type.type-style('body-compact-01');
+  }
+}
+
+.comment {
+  margin-top: layout.$spacing-02;
+  color: colors.$gray-70;
+  white-space: pre-wrap;
+}
+
+.dateRow {
+  display: flex;
+  align-items: flex-end;
+  gap: layout.$spacing-03;
+  margin-top: layout.$spacing-05;
+}
+
+.notification {
+  margin-top: layout.$spacing-05;
+  max-width: none;
+}
